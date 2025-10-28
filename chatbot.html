@@ -60,7 +60,7 @@
       .chat-message-profile{
         width: 45px;
       }
-      .chat-message-container{
+      .chat-messages-container{
         flex-grow: 1;
         margin-top: 20px;
         overflow: scroll;
@@ -164,7 +164,7 @@
         }, [chatMessages]);
 
         return (
-          <div className="chat-message-container" ref={chatMessagesRef}>
+          <div className="chat-messages-container" ref={chatMessagesRef}>
             {
               chatMessages.map((chatMessage) => {
                 return (
